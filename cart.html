@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 4 By RAHUL ROSHAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cart.css">
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16" />
+
+</head>
+
+<body>
+    <!-- header -->
+
+    <div class="delivery">
+        <div class="d-flex flex-row bd-highlight mb-5">
+            <div class="p-2 bd-highlight">
+                <li class="nav-item">
+                    <a class="nav-social" target="_blank" href="https://www.facebook.com/Kababjees.Bakers/">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+
+                </li>
+            </div>
+            <div class="p-2 bd-highlight">
+                <li class="nav-item">
+                    <a class="nav-social" target="_blank"
+                        href="https://www.youtube.com/channel/UCZaUSZMqiOQBh-YWDmqMStg">
+                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </div>
+            <div class="p-2 bd-highlight">
+                <li class="nav-item">
+                    <a class="nav-social" target="_blank" href="https://twitter.com/Kababjees_rest">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </div>
+            <div class="p-2 bd-highlight">
+                <li class="nav-item">
+                    <a class="nav-social" target="_blank" href="https://www.instagram.com/kababjees.bakers/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <!-- navigation -->
+    <div class="navigation sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+                <img src="images/100.png" alt="" width="300px" height="auto" srcset="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MY ACCOUNT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="signup.html">SIGN UP</a>
+                                <a class="dropdown-item" href="login.html">LOGIN</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">
+                                <!-- <i class="fa fa-cart-plus" aria-hidden="true"> -->
+                                <button type="button"
+                                    style="background-color:radial-gradient(rgb(144, 212, 89), rgb(243, 137, 75), rgba(255, 37, 146, 0.925));"
+                                    class="btn btn-primary1" data-toggle="modal" data-target="#cart"><i
+                                        class="fa fa-cart-plus" aria-hidden="true"> (<span
+                                            class="total-count"></span>)</i></button>
+                            </a>
+                        </li>
+
+                    </ul>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- navigation -->
+
+
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h2>Billing Address</h2>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="ENTER YOUR NAME">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="Abc@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="Example Street ">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="KARACHI">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="NY">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h2>Payment</h2>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="NAME">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart
+                    <span class="price" style="color:black">
+                        <i class="fa fa-shopping-cart"></i>
+                        <b></b>
+                    </span>
+                </h4>
+                <p><a href="#">Product 1</a> <span class="price"></span></p>
+                <p><a href="#">Product 2</a> <span class="price"></span></p>
+                <p><a href="#">Product 3</a> <span class="price"></span></p>
+                <p><a href="#">Product 4</a> <span class="price"></span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b></b></span></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+
+</body>
+
+</html>

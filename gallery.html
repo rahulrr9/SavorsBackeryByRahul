@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 4 By RAHUL ROSHAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .column img:hover {
+            opacity: 1;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+
+        .container1 {
+            font-size: 20px;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            background-color: rgb(220, 238, 155);
+            color: rgb(123, 77, 250);
+            text-decoration: salmon;
+            text-shadow: 2px 5px 4px rgb(226, 212, 15);
+            box-shadow: 2px 4px 3px rgb(233, 163, 11);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="delivery">
+        <div class="d-flex flex-row bd-highlight mb-5">
+            <div class="p-2 bd-highlight">
+                <li class="nav-item">
+                    <a class="nav-social" target="_blank" href="https://www.facebook.com/Kababjees.Bakers/">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+
+                </li>
+            </div>
+            <div class="p-2 bd-highlight">
+                <li class="nav-item">
+                    <a class="nav-social" target="_blank"
+                        href="https://www.youtube.com/channel/UCZaUSZMqiOQBh-YWDmqMStg">
+                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </div>
+            <div class="p-2 bd-highlight">
+                <li class="nav-item">
+                    <a class="nav-social" target="_blank" href="https://twitter.com/Kababjees_rest">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </div>
+            <div class="p-2 bd-highlight">
+                <li class="nav-item">
+                    <a class="nav-social" target="_blank" href="https://www.instagram.com/kababjees.bakers/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <!-- navigation -->
+    <div class="navigation sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+                <img src="images/100.png" alt="" width="300px" height="auto" srcset="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MY ACCOUNT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="signup.html">SIGN UP</a>
+                                <a class="dropdown-item" href="login.html">LOGIN</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">
+                                <!-- <i class="fa fa-cart-plus" aria-hidden="true"> -->
+                                <button type="button"
+                                    style="background-color:radial-gradient(rgb(144, 212, 89), rgb(243, 137, 75), rgba(255, 37, 146, 0.925));"
+                                    class="btn btn-primary1" data-toggle="modal" data-target="#cart"><i
+                                        class="fa fa-cart-plus" aria-hidden="true"> (<span
+                                            class="total-count"></span>)</i></button>
+                            </a>
+                        </li>
+
+                    </ul>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- navigation -->
+
+
+    <div class="container1" style="text-align:center">
+        <h1> Gallery</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="column">
+            <img src="images/k4.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/k5.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/k3.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/k2.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/k6.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/k1.jpg" style="width:100%" style="height:200% ;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/i5.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/i6.jpg" style="width:100%" onclick="myFunction(this);"><br>
+        </div><br>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
